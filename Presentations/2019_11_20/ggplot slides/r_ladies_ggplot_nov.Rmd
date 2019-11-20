@@ -30,7 +30,6 @@ knitr::include_graphics("logo.png")
 ```
 
 
-
 ---
 class: inverse, center
 background-image: url(https://media.giphy.com/media/HkEAY1Yu8UWLS/giphy.gif) 
