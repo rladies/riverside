@@ -1,0 +1,65 @@
+---
+title: "Hugo Academic Tutorial"
+author: "Daniela Cassol"
+output: html_document
+---
+
+# Annotations to create and edit template
+
+## Install Package
+
+```{r, eval=FALSE}
+install.packages("blogdown")
+blogdown::install_hugo()
+```
+
+## Create the new website template
+
+```{r, eval=FALSE}
+blogdown::new_site(theme = "gcushen/hugo-academic")
+```
+
+## Build and View the WebSite
+
+```{r, eval=FALSE}
+blogdown::build_site()
+blogdown::serve_site()
+```
+
+## Delete Demo Section
+
+- Delete files:
+  - ```content/home/demo.md```
+  - ```content/home/hero.md```
+
+## Change Colors:
+ - Check name in ```config/_default/params.toml```
+    - theme = "minimal" ## Could change the theme here or create a new file and added the colors. 
+    - ```themes/hugo-academic/data/themes``` ## Config files for the themes
+    
+## Edit About
+  - ```content/authors/admin/_index.md```: edit
+  - replace the image and keep the same name
+  - ```content/home/about.md```: Title `Biography`
+
+## Edit the menu
+
+```config/_default/menus.toml```
+
+
+## Edit `Contact` Section
+  - Edit the info here: ```config/_default/params.toml```
+
+
+# Themes
+
+- Gallery of [Hugo Themes](https://themes.gohugo.io/)
+  1. Select the theme
+  2. Click on `Download` (it will be redirected to GitHub Repository)
+  3. Replace the theme argument to the username/reponame, for example: 
+      - ```blogdown::new_site(theme = "MeiK2333/github-style")```
+
+# Reference
+
+- [blogdown: Creating Websites with R Markdown](https://bookdown.org/yihui/blogdown/)
+

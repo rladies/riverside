@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>R-Ladies Riverside</title>
+    <link>/author/r-ladies-riverside/</link>
+      <atom:link href="/author/r-ladies-riverside/index.xml" rel="self" type="application/rss+xml" />
+    <description>R-Ladies Riverside</description>
+    <generator>Source Themes Academic (https://sourcethemes.com/academic/)</generator><language>en-us</language><copyright>© 2020 R-Ladies Riverside</copyright>
+    <image>
+      <url>/author/r-ladies-riverside/avatar_hu648b834d5a8b42d8de95eb25befe226c_2216895_270x270_fill_lanczos_center_2.png</url>
+      <title>R-Ladies Riverside</title>
+      <link>/author/r-ladies-riverside/</link>
+    </image>
+    
+  </channel>
+</rss>
