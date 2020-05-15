@@ -22,9 +22,7 @@ Team members and info are in '_config.yml'
 Images are in '/img/team/'
 
 
-# Demo
+### Profile Image
 
-View this jekyll theme in action [here](https://y7kim.github.io/agency-jekyll-theme)
-
-=========
-For more details, read [documentation](http://jekyllrb.com/)
+File: `_includes/css/agency.css`
+    - line 272: background-image: url('{{ site.baseurl }}/img/profile.png');

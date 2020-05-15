@@ -1,0 +1,15 @@
+---
+title: Next Meeting
+subtitle: Next Meeting - TBP
+layout: default
+modal-id: 2
+date: 2020-05-10
+img: escape.png
+thumbnail: escape-thumbnail.png
+alt: image-alt
+project-date: May 2020
+client: Start Bootstrap
+category: Web Development
+description: To be posted
+
+---
