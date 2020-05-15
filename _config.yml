@@ -2,7 +2,7 @@
 title: R-Ladies Riverside
 email: riverside@rladies.org
 url: https://rladies.github.io
-#baseurl: /riverside/
+baseurl: /riverside/
 description: "R-Ladies Riverside"
 keywords: "your keywords, separated by commas"
 skills: "R-Community - Diversity - Support"
