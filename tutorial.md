@@ -22,7 +22,7 @@ nav-menu: true
 <!-- Two -->
 <section id="two" class="spotlights">
 	<section>
-		<a href="generic.html" class="image">
+		<a href="2019/10/01/first.html" class="image">
 			<img src="{% link assets/images/pic09.jpg %}" alt="" data-position="center center" />
 		</a>
 		<div class="content">
@@ -32,7 +32,7 @@ nav-menu: true
 				</header>
 				<p>Add description.</p>
 				<ul class="actions">
-					<li><a href="generic.html" class="button">Learn more</a></li>
+					<li><a href="2019/10/01/first.html" class="button">Learn more</a></li>
 				</ul>
 			</div>
 		</div>
