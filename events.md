@@ -13,7 +13,7 @@ nav-menu: false
 <section id="one">
 	<div class="inner">
 		<header class="major">
-			<h2>Comming soon...</h2>
+			<h2>Coming soon...</h2>
 		</header>
 		<p></p>
 	</div>
