@@ -1,25 +1,56 @@
-  <footer>
-        <div class="container">
-            <div class="row">
-                <div class="col-md-4">
-                    <span class="copyright">Copyright &copy; {{ site.title }} {{ 'now' | date: "%Y" }}</span>
-                </div>
-                <div class="col-md-4">
-                    <ul class="list-inline social-buttons">
-                        {% for network in site.social %}
-                        <li><a href="{{ network.url }}"><i class="fa fa-{{ network.title }}"></i></a>
-                        </li>
-                        {% endfor %}
-                    </ul>
-                </div>
-                <div class="col-md-4">
-                    <ul class="list-inline quicklinks">
-                        <li><a href="#">Privacy Policy</a>
-                        </li>
-                        <li><a href="#">Terms of Use</a>
-                        </li>
-                    </ul>
-                </div>
-            </div>
-        </div>
-    </footer>
+<!-- Contact -->
+<section id="contact">
+	<div class="inner">
+	  <section>
+	      <div>
+					<h2>Contact Us</h2>
+					<h5>If you are interested in helping us to organize the events or would like to find out more information about the group, contact us! </h5>
+				</div>
+				<p> </p> 
+				<div class="contact-method">
+				  <span class="icon alt fa-envelope"></span>
+					<h3>Email</h3>
+					<a href="mailto:riverside@rladies.org ">riverside@rladies.org</a>
+				</div>
+		</section>
+		<section class="split">
+		<section>
+			<div class="contact-method">
+					<span class="icon alt fa-twitter"></span>
+					<h3><a href="{{ site.twitter_url }}">Twitter</a></h3>
+				</div>
+			</section>
+			<section>
+				<div class="contact-method">
+					<span class="icon alt fa-calendar"></span>
+					<h3><a href="{{ site.meetup }}">Meetup</a></h3>
+				</div>
+			</section>
+			<section>
+				<div class="contact-method">
+					<span class="icon alt fa-github"></span>
+					<h3><a href="{{ site.github_url }}">GitHub</a></h3>
+			</section>
+			</section>
+	</div>
+</section>
+
+<!-- Footer -->
+	<footer id="footer">
+		<div class="inner">
+
+			    <h5><p class="copyright text-muted small">Copyright &copy; {{ site.title }} 2020. All Rights Reserved.</p></h5>
+
+		</div>
+	</footer>
+
+</div>
+
+<!-- Scripts -->
+	<script src="{{ "assets/js/jquery.min.js" | absolute_url }}"></script>
+	<script src="{{ "assets/js/jquery.scrolly.min.js" | absolute_url }}"></script>
+	<script src="{{ "assets/js/jquery.scrollex.min.js" | absolute_url }}"></script>
+	<script src="{{ "assets/js/skel.min.js" | absolute_url }}"></script>
+	<script src="{{ "assets/js/util.js" | absolute_url }}"></script>
+	<!--[if lte IE 8]><script src="{{ "assets/js/ie/respond.min.js" | absolute_url }}"></script><![endif]-->
+	<script src="{{ "assets/js/main.js" | absolute_url }}"></script>

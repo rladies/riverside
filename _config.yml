@@ -1,56 +1,23 @@
-url: https://rladies.github.io/
-baseurl: /riverside/
-
-# Site settings
+# site settings
 title: R-Ladies Riverside
-email: riverside@rladies.org
-description: "R-Ladies Riverside"
+subtitle: 
+email: riverside@rladies.org 
+description: 
+baseurl: "/r-ladies_test" # the subpath of your site, e.g. /blog
+url: # the base hostname & protocol for your site
+author:
+meetup: https://www.meetup.com/rladies-riverside/
 
-pages:
-  - title: twitter
-    url: https://twitter.com/RLadiesRiversd
-  - title: github
-    url: https://github.com/rladies/meetup-presentations_riverside
+# homepage tiles
+tiles-source: pages # accepts "posts" or "pages"
+tiles-count: 6
 
-# Team names, titles and social links
-people:
-- name: Daniela Cassol
-  pic: 1.png
-  position: Co-Founder
-  social:
-    - title: twitter
-      url: https://twitter.com/danicassol
-    - title: github
-      url: https://github.com/dcassol/
+# social settings
+github_url: https://github.com/rladies/meetup-presentations_riverside
+twitter_url: https://twitter.com/RLadiesRiversd
 
-- name: Marília P. Gaiarsa
-  pic: 2.png
-  position: Co-Founder
-  social:
-    - title: twitter
-      url: https://twitter.com/magaiarsa
-    - title: github
-      url: https://github.com/magaiarsa
-
-- name: Teresa Bohner
-  pic: 3.png
-  position: Co-Founder
-  social:
-    - title: github
-      url: https://github.com/tfbohner
-
-# Social networks usernames (many more available: google-plus, flickr, dribbble, pinterest, instagram, tumblr, linkedin, etc.)
-social:
-  - title: twitter
-    url: https://twitter.com/RLadiesRiversd
-  - title: github
-    url: https://github.com/rladies/meetup-presentations_riverside
-
-# Postal address (add as many lines as necessary)
-# address:
-#  - line: 
-#  - line: 
-
-# Build settings
+# build settings
 markdown: kramdown
-permalink: pretty
+
+sass:
+  style: compressed
