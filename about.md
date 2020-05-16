@@ -25,7 +25,7 @@ We are part of Global R-Ladies group. You can access our presentations, R script
 <!-- About R-Ladies global -->
 <h2 id="content">R-Ladies Global</h2>
 
-<p><span class="image right"><img src="{% link assets/images/R-LadiesGlobal.png %}" alt="" /></span>R-Ladies Global write about...</p>
+<p><span class="image right"><img src="assets/images/R-LadiesGlobal.png" alt="" /></span>R-Ladies Global write about...</p>
 
 <!-- Section -->
 <div class="row">
