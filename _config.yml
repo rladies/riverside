@@ -3,7 +3,7 @@ title: R-Ladies Riverside
 subtitle: 
 email: riverside@rladies.org 
 description: 
-baseurl: "/r-ladies_test" # the subpath of your site, e.g. /blog
+baseurl: "/riverside" # the subpath of your site, e.g. /blog
 url: # the base hostname & protocol for your site
 author:
 meetup: https://www.meetup.com/rladies-riverside/
