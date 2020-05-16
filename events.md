@@ -9,19 +9,19 @@ nav-menu: false
 <!-- Main -->
 <div id="main">
 
-<!-- One 
+<!-- One -->
 <section id="one">
 	<div class="inner">
 		<header class="major">
-			<h2>Sed amet aliquam</h2>
+			<h2>Comming soon...</h2>
 		</header>
-		<p>Nullam et orci eu lorem consequat tincidunt vivamus et sagittis magna sed nunc rhoncus condimentum sem. In efficitur ligula tate urna. Maecenas massa vel lacinia pellentesque lorem ipsum dolor. Nullam et orci eu lorem consequat tincidunt. Vivamus et sagittis libero. Nullam et orci eu lorem consequat tincidunt vivamus et sagittis magna sed nunc rhoncus condimentum sem. In efficitur ligula tate urna.</p>
+		<p></p>
 	</div>
-</section> -->
+</section> 
 
 <!-- Two -->
 <section id="two" class="spotlights">
-
+<!-- 
 	<section>
 
 			<img src="{% link assets/images/FebFlyer.png %}" alt="" data-position="top center" />
@@ -38,6 +38,7 @@ nav-menu: false
 			</div>
 		</div>
 	</section>
+-->
 	<section>
 		<a href="generic.html" class="image">
 			<img src="{% link assets/images/2019_oct.jpeg %}" alt="" data-position="25% 25%" />
