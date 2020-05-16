@@ -2,7 +2,7 @@
 title: Tutorials
 layout: landing
 description: 'Tutorials'
-image: assets/images/pic07.jpg
+image: assets/images/3190343.jpg
 nav-menu: true
 ---
 
