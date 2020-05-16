@@ -1,6 +1,6 @@
 # R-Ladies Riverside WebPage
 
-![R-Ladies Riverside](assets/images/rLadiesLogo.png "Logo")
+<img src="https://github.com/rladies/rladies-riverside/blob/master/images/rLadiesLogo.png" width="250" class="center"/>
 
 # How to Use
 
