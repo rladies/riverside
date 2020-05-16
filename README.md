@@ -14,4 +14,4 @@ and [creating pages](https://jekyllrb.com/docs/pages/).
 
 # Credits
 
-Repository [Jekyll Theme](https://github.com/andrewbanchich/forty-jekyll-theme) icon licensed under a [Creative Commons Attribution 3.0 International License](https://github.com/andrewbanchich/forty-jekyll-theme/blob/master/LICENSE.md).
+Repository [Jekyll Theme](https://github.com/andrewbanchich/forty-jekyll-theme) used, under a [Creative Commons Attribution 3.0 International License](https://github.com/andrewbanchich/forty-jekyll-theme/blob/master/LICENSE.md).
