@@ -13,26 +13,26 @@ nav-menu: true
 <section id="one">
 	<div class="inner">
 		<header class="major">
-			<h2>Under Development.</h2>
+			<h2>More tutorials coming soon!</h2>
 		</header>
-		<p> Description </p>
+		<p>  </p>
 	</div>
 </section>
 
 <!-- Two -->
 <section id="two" class="spotlights">
 	<section>
-		<a href="2019/10/01/first.html" class="image">
-			<img src="assets/images/pic09.jpg" alt="" data-position="center center" />
+		<a href="2020/05/20/packages.html" class="image">
+			<img src="assets/images/3143931.jpg" alt="" data-position="center center" />
 		</a>
 		<div class="content">
 			<div class="inner">
 				<header class="major">
-					<h3>ggplot2</h3>
+					<h3>Install Packages for the Random Forest Meeting</h3>
 				</header>
-				<p>Add description.</p>
+				<p></p>
 				<ul class="actions">
-					<li><a href="2019/10/01/first.html" class="button">Learn more</a></li>
+					<li><a href="2020/05/20/packages.html" class="button">Learn more</a></li>
 				</ul>
 			</div>
 		</div>

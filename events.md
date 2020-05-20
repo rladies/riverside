@@ -3,7 +3,7 @@ title: Events
 layout: landing
 description: 'R-Ladies Riverside Events'
 image: assets/images/5911.jpg
-nav-menu: false
+nav-menu: true
 ---
 
 <!-- Main -->

@@ -2,7 +2,7 @@
 layout: allposts
 title: All Meetings
 landing-title: 'All Meetings'
-nav-menu: true
+nav-menu: false
 description: null
 image: null
 author: null
