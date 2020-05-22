@@ -12,7 +12,7 @@ nav-menu: true
 <!-- Upcoming Events -->
 <section id="one">
 	<div class="inner">
-		<header class="major">
+		<header class="major">s
 			<h2>Upcoming Events</h2>
 		</header>
 		<p></p>
@@ -61,8 +61,8 @@ nav-menu: true
 <section id="two" class="spotlights">
 
 <!-- Past events -->
-
 <!-- add here -->
+
 <!-- April 2020 -->
 	<section>
 		<a href="2020/04/22/2020apr.html" class="image">
@@ -80,6 +80,7 @@ nav-menu: true
 			</div>
 		</div>
 	</section>
+	
 <!-- fev 2020 -->
 	<section>
 		<a href="2020/02/25/2020feb.html" class="image">
@@ -97,6 +98,7 @@ nav-menu: true
 			</div>
 		</div>
 	</section>
+	
 <!-- jan 2020 -->
 	<section>
 		<a href="2020/01/23/2020jan.html" class="image">
@@ -114,6 +116,7 @@ nav-menu: true
 			</div>
 		</div>
 	</section>
+	
 <!-- Nov 2019 -->
 	<section>
 		<a href="2019/11/20/2019nov.html" class="image">
@@ -131,6 +134,7 @@ nav-menu: true
 			</div>
 		</div>
 	</section>
+	
 <!-- Oct 2019 -->	
 	<section>
 		<a href="events.html" class="image">
@@ -149,7 +153,6 @@ nav-menu: true
 		</div>
 	</section>
 </section>
-
 
 <!-- Three 
 <section id="three">
