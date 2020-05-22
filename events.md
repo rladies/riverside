@@ -63,7 +63,24 @@ nav-menu: true
 <!-- Past events -->
 
 <!-- add here -->
-<!-- Nov 2019 -->
+<!-- fev 2020 -->
+	<section>
+		<a href="2020/02/25/2020feb.html" class="image">
+			<img src="assets/images/flyers/feb2020.png" alt="" data-position="25% 25%" />
+		</a>
+		<div class="content">
+			<div class="inner">
+				<header class="major">
+					<h3>Tidy Tuesday</h3>
+				</header>
+				<p></p>
+				<ul class="actions">
+					<li><a href="2020/02/25/2020feb.html" class="button">Learn more</a></li>
+				</ul>
+			</div>
+		</div>
+	</section>
+<!-- jan 2020 -->
 	<section>
 		<a href="2020/01/23/2020jan.html" class="image">
 			<img src="assets/images/flyers/jan2020.png" alt="" data-position="25% 25%" />
