@@ -63,6 +63,23 @@ nav-menu: true
 <!-- Past events -->
 
 <!-- add here -->
+<!-- April 2020 -->
+	<section>
+		<a href="2020/04/22/2020apr.html" class="image">
+			<img src="assets/images/flyers/apr2020.png" alt="" data-position="25% 25%" />
+		</a>
+		<div class="content">
+			<div class="inner">
+				<header class="major">
+					<h3>R Shiny for research and teaching</h3>
+				</header>
+				<p></p>
+				<ul class="actions">
+					<li><a href="2020/04/22/2020apr.html" class="button">Learn more</a></li>
+				</ul>
+			</div>
+		</div>
+	</section>
 <!-- fev 2020 -->
 	<section>
 		<a href="2020/02/25/2020feb.html" class="image">
