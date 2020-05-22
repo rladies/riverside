@@ -63,9 +63,26 @@ nav-menu: true
 <!-- Past events -->
 
 <!-- add here -->
-
+<!-- Nov 2019 -->
 	<section>
 		<a href="generic.html" class="image">
+			<img src="assets/images/flyers/nov2019.png" alt="" data-position="25% 25%" />
+		</a>
+		<div class="content">
+			<div class="inner">
+				<header class="major">
+					<h3>Come plot with us!</h3>
+				</header>
+				<p></p>
+				<ul class="actions">
+					<li><a href="2019/11/20/2019nov.html" class="button">Learn more</a></li>
+				</ul>
+			</div>
+		</div>
+	</section>
+<!-- Oct 2019 -->	
+	<section>
+		<a href="events.html" class="image">
 			<img src="assets/images/2019_oct.jpeg" alt="" data-position="25% 25%" />
 		</a>
 		<div class="content">
@@ -75,7 +92,7 @@ nav-menu: true
 				</header>
 				<p>Kickoff Meetup Meet & Greet</p>
 				<ul class="actions">
-					<li><a href="generic.html" class="button">Learn more</a></li>
+					<li><a href="2019/10/01/2019oct.html" class="button">Learn more</a></li>
 				</ul>
 			</div>
 		</div>
