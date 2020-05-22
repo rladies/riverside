@@ -65,7 +65,24 @@ nav-menu: true
 <!-- add here -->
 <!-- Nov 2019 -->
 	<section>
-		<a href="generic.html" class="image">
+		<a href="2020/01/23/2020jan.html" class="image">
+			<img src="assets/images/flyers/jan2020.png" alt="" data-position="25% 25%" />
+		</a>
+		<div class="content">
+			<div class="inner">
+				<header class="major">
+					<h3>The wonders of R Markdown</h3>
+				</header>
+				<p></p>
+				<ul class="actions">
+					<li><a href="2020/01/23/2020jan.html" class="button">Learn more</a></li>
+				</ul>
+			</div>
+		</div>
+	</section>
+<!-- Nov 2019 -->
+	<section>
+		<a href="2019/11/20/2019nov.html" class="image">
 			<img src="assets/images/flyers/nov2019.png" alt="" data-position="25% 25%" />
 		</a>
 		<div class="content">
