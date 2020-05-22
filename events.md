@@ -9,11 +9,49 @@ nav-menu: true
 <!-- Main -->
 <div id="main">
 
-<!-- One -->
+<!-- Upcoming Events -->
 <section id="one">
 	<div class="inner">
 		<header class="major">
-			<h2>Coming soon...</h2>
+			<h2>Upcoming Events</h2>
+		</header>
+		<p></p>
+	</div>
+</section> 
+
+<!-- Add here -->
+<section id="two" class="spotlights">
+	<section>
+		<a href="2020/05/22/2020jun.html" class="image">
+			<img src="assets/images/flyers/jun2020.png" alt="" data-position="25% 25%" /> 
+		</a>
+		<div class="content">
+			<div class="inner">
+				<header class="major">
+				<!-- Add Title here -->
+					<h3>A Random Forests Tutorial with Examples in R</h3>
+				</header>
+				<!-- Add more details here -->
+				<p>Hello RiveRside community ;-)</p>
+				<p>Come join us for a virtual evening of networking and learning on Tuesday, June 2nd, 5:15 pm (PST). Please, don't forget to sign up on our
+				<a href="https://www.meetup.com/rladies-riverside/events/270746911/"> Meetup page</a> page to get access to the meeting's ID and password.</p>
+				<p>Whether you are new to R or a data scientist, join us for a Random Forest algorithm tutorial and see how you can apply machine learning in your research. At the end of the meeting, we will have time to help each other with any R-related questions.</p>
+				<p>Please have R and RStudio already installed on your computers. Also please install and verify that the package is loaded and working properly by running the first three lines of code in the tutorial <a href="https://rladies.github.io/riverside/2020/05/20/packages.html">here</a>.</p>
+				<p>Big thanks to UCR Library and UCR GradQuant for supporting us, and to our guest speaker Rebecca Paulette Kurtz-Garcia from Statistics Department, UCR!</p>
+				<p>See you soon!</p>
+				<ul class="actions">
+					<li><a href="https://www.meetup.com/rladies-riverside/events/270746911/" class="button">Register here</a></li>
+				</ul>
+			</div>
+		</div>
+	</section>
+</section>
+
+<!-- Past Events -->
+<section id="one">
+	<div class="inner">
+		<header class="major">
+			<h2>Past Events</h2>
 		</header>
 		<p></p>
 	</div>
@@ -21,24 +59,11 @@ nav-menu: true
 
 <!-- Two -->
 <section id="two" class="spotlights">
-<!-- 
-	<section>
 
-			<img src="{% link assets/images/FebFlyer.png %}" alt="" data-position="top center" />
+<!-- Past events -->
 
-		<div class="content">
-			<div class="inner">
-				<header class="major">
-					<h3>TidyTuesday</h3>
-				</header>
-				<p>TidyTuesday</p>
-				<ul class="actions">
-					<li><a href="generic.html" class="button">Learn more</a></li>
-				</ul>
-			</div>
-		</div>
-	</section>
--->
+<!-- add here -->
+
 	<section>
 		<a href="generic.html" class="image">
 			<img src="assets/images/2019_oct.jpeg" alt="" data-position="25% 25%" />
@@ -56,6 +81,7 @@ nav-menu: true
 		</div>
 	</section>
 </section>
+
 
 <!-- Three 
 <section id="three">
