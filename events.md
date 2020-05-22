@@ -12,7 +12,7 @@ nav-menu: true
 <!-- Upcoming Events -->
 <section id="one">
 	<div class="inner">
-		<header class="major">s
+		<header class="major">
 			<h2>Upcoming Events</h2>
 		</header>
 		<p></p>
