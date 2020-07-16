@@ -23,6 +23,47 @@ nav-menu: true
 <section id="two" class="spotlights">
 	<section>
 		<a href="2020/05/22/2020jun.html" class="image">
+			<img src="assets/images/flyers/jul2020.png" alt="" data-position="25% 25%" /> 
+		</a>
+		<div class="content">
+			<div class="inner">
+				<header class="major">
+				<!-- Add Title here -->
+					<h3>Analyzing Genomics Data in R with Bioconductor</h3>
+				</header>
+				<!-- Add more details here -->
+				<p>Hello RiveRside community ;-)</p>
+				<p>Come join us for a virtual meeting of networking and learning next Wednesday, July 22nd, 12:00 (PST). Don't forget to RSVP in our 
+				<a href="https://www.meetup.com/rladies-riverside/events/271929066/"> Meetup page</a> page to get access to the meeting's ID and password.</p>
+				<p>Whether you are new to R or a data scientist, join us for an introduction to Bioconductor and tools for analysis and comprehension of high-throughput genomic data.</p>
+				<p>At the end of the meeting, we will have time to help each other with any R-related questions.</p>
+				<p>Big thanks to UCR Library and UCR GradQuant for supporting us, and to our guest speaker *Dr. Stephanie Hicks* from the Department of Biostatistics at Johns Hopkins Bloomberg School of Public Health!</p>
+				<p>See you soon!</p>
+				<ul class="actions">
+					<li><a href="https://www.meetup.com/rladies-riverside/events/271929066/" class="button">Register here</a></li>
+				</ul>
+			</div>
+		</div>
+	</section>
+</section>
+
+<!-- Past Events -->
+<section id="one">
+	<div class="inner">
+		<header class="major">
+			<h2>Past Events</h2>
+		</header>
+		<p></p>
+	</div>
+</section> 
+
+<!-- Two -->
+<section id="two" class="spotlights">
+
+<!-- Past events -->
+<!-- add here -->
+	<section>
+		<a href="2020/05/22/2020jun.html" class="image">
 			<img src="assets/images/flyers/jun2020.png" alt="" data-position="25% 25%" /> 
 		</a>
 		<div class="content">
@@ -45,23 +86,6 @@ nav-menu: true
 			</div>
 		</div>
 	</section>
-</section>
-
-<!-- Past Events -->
-<section id="one">
-	<div class="inner">
-		<header class="major">
-			<h2>Past Events</h2>
-		</header>
-		<p></p>
-	</div>
-</section> 
-
-<!-- Two -->
-<section id="two" class="spotlights">
-
-<!-- Past events -->
-<!-- add here -->
 
 <!-- April 2020 -->
 	<section>
