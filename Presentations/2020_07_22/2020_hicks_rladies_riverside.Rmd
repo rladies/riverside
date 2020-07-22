@@ -1,0 +1,115 @@
+---
+title: 'Analyzing Genomics Data in R with Bioconductor'
+author: 'Stephanie Hicks'
+date: '2020-07-22'
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE, fig.align = "center", out.width = '100%')
+library(tidyverse)
+library(cowplot)
+library(lubridate)
+library(here)
+```
+
+```{r, install-pkgs, eval=FALSE}
+install.packages("BiocManager")
+BiocManager::install("BiocPkgTools")
+BiocManager::install("GenomicRanges")
+```
+
+
+
+## Explore Bioconductor statistics with `BiocPkgTools`
+
+Functions to access metadata around Bioc packages and usage in a tidy data format. 
+
+```{r}
+suppressMessages({
+  library(BiocPkgTools)
+})
+
+pkgs <- biocDownloadStats()
+head(pkgs)
+```
+
+## How many Bioconductor packages in 2019? 
+
+```{r, message=FALSE}
+pkgs %>% 
+  filter(Month != "all", Year==2020) %>%
+  select(Package, repo) %>% 
+  distinct() %>%
+  group_by(repo) %>%
+  count()
+```
+
+* Annotation packages = streamlines tedious bookkeeping 
+* Experiment data packages = contains processed data; useful for teaching
+
+## Plot of Bioconductor packages over time
+
+```{r}
+pkgs %>% 
+  filter(Month != "all", repo=="Software") %>%
+  select(Package, Year) %>%
+  distinct() 
+```
+
+```{r}
+pkgs %>% 
+  filter(Month != "all", repo=="Software") %>%
+  select(Package, Year) %>%
+  distinct() %>%
+  group_by(Year) %>%
+  summarize(total_packages = n()) %>%
+  arrange(desc(Year)) %>%
+  ggplot(aes(x=Year,y=total_packages)) + 
+    geom_point() + 
+    xlab("Year") +
+    ylab("Package count") +
+    labs(title = "Number of Bioconductor Software Packages")
+```
+
+## Creating a `GenomicRanges`
+
+```{r, message=FALSE}
+suppressMessages({
+  library(GenomicRanges)
+})
+
+gr <- GRanges(seqnames = "chr1", strand = c("+", "-"),
+              ranges = IRanges(start = c(102012,520211),
+                               end=c(120303, 526211)), 
+              gene_id = c(1001,2151), 
+              score = c(10, 25))
+gr
+```
+
+```{r}
+width(gr)
+```
+
+----
+```{r}
+gr[gr$score > 15, ]
+```
+
+
+----
+```{r, warning=FALSE, message=TRUE}
+suppressMessages({
+  library(plyranges)
+})
+
+gr %>% 
+  filter(score > 15)
+```
+
+----
+```{r, warning=FALSE, message=TRUE}
+gr %>% 
+  filter(score > 15) %>% 
+  width()
+```
+
