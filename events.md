@@ -38,6 +38,8 @@ nav-menu: true
 				<p>Whether you are new to R or a data scientist, join us for an introduction to Bioconductor and tools for analysis and comprehension of high-throughput genomic data.</p>
 				<p>At the end of the meeting, we will have time to help each other with any R-related questions.</p>
 				<p>Big thanks to UCR Library and UCR GradQuant for supporting us, and to our guest speaker *Dr. Stephanie Hicks* from the Department of Biostatistics at Johns Hopkins Bloomberg School of Public Health!</p>
+				
+				<p><a href="https://github.com/rladies/riverside/tree/master/Presentations/2020_07_22">Slides and code for the meeting!</a> </p>
 				<p>See you soon!</p>
 				<ul class="actions">
 					<li><a href="https://www.meetup.com/rladies-riverside/events/271929066/" class="button">Register here</a></li>
