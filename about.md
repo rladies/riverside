@@ -40,9 +40,9 @@ We are part of Global R-Ladies group. You can access our presentations, R script
 
 	<dt> <a href="https://github.com/tfbohner">Teresa Bohner</a></dt>
 	
-		<dt> <a href="https://tshates.github.io/">Tessa Shates</a></dt>
-
+	<dt> <a href="https://tshates.github.io/">Tessa Shates</a></dt>
 </dl>
+
 <hr class="major" />
 <!-- Preformatted Code -->
 <h3>R-Ladies Riverside</h3>
