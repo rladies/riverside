@@ -22,6 +22,49 @@ nav-menu: true
 <!-- Add here -->
 <section id="two" class="spotlights">
 	<section>
+		<a href="2020/10/27/2020dec.html" class="image"> 
+			<img src="assets/images/flyers/dec2020.png" alt="" data-position="25% 25%" /> 
+		</a>
+		<div class="content">
+			<div class="inner">
+				<header class="major">
+				<!-- Add Title here -->
+					<h3>Data Science as a Team Sport</h3>
+				</header>
+				<!-- Add more details here -->
+				<p>Hello RiveRside community ;-)</p>
+				<p>Join us for our next virtual meeting of learning and networking, Thursday, December 10th, at 5:00 PM (PST).</p>
+				<p>We will hear from <a href="https://k-roz.com/">Gabriela de Queiroz </a>, founder of <a href="https://rladies.org/">R-Ladies</a> and <a href="https://www.ai-inclusive.org/">AI Inclusive</a>. Gabriela will tell us about her career journey, as well as the many different roles a Data Scientist may have. </p>
+				<p>At the end of the meeting, there will be time to ask any questions you may have about data scientist careers or questions about R in general.
+				Don't forget to RSVP in our <a href="https://www.meetup.com/rladies-riverside/events/274066116/">Meetup</a> to get access to the meeting's ID and password.</p>
+						<p>Big thanks to UCR Library and UCR GradQuant for supporting us.</p>
+				<p>See you soon!</p>
+				<ul class="actions">
+					<li><a href="https://www.meetup.com/rladies-riverside/events/274066116/" class="button">Register here</a></li>
+				</ul>
+			</div>
+		</div>
+	</section>
+</section>
+
+<!-- Past Events -->
+<section id="one">
+	<div class="inner">
+		<header class="major">
+			<h2>Past Events</h2>
+		</header>
+		<p></p>
+	</div>
+</section> 
+
+<!-- Two -->
+<section id="two" class="spotlights">
+
+<!-- Past events -->
+<!-- add here -->
+
+<!-- Jul 2020 -->
+	<section>
 		<a href="2020/05/22/2020jun.html" class="image">
 			<img src="assets/images/flyers/jul2020.png" alt="" data-position="25% 25%" /> 
 		</a>
@@ -47,23 +90,8 @@ nav-menu: true
 			</div>
 		</div>
 	</section>
-</section>
 
-<!-- Past Events -->
-<section id="one">
-	<div class="inner">
-		<header class="major">
-			<h2>Past Events</h2>
-		</header>
-		<p></p>
-	</div>
-</section> 
-
-<!-- Two -->
-<section id="two" class="spotlights">
-
-<!-- Past events -->
-<!-- add here -->
+<!-- May 2020 -->
 	<section>
 		<a href="2020/05/22/2020jun.html" class="image">
 			<img src="assets/images/flyers/jun2020.png" alt="" data-position="25% 25%" /> 
