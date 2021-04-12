@@ -22,6 +22,50 @@ nav-menu: true
 <!-- Add here -->
 <section id="two" class="spotlights">
 	<section>
+		<a href="2021/04/13/2021apr.html" class="image"> 
+			<img src="assets/images/flyers/apr2021.png" alt="" data-position="25% 25%" /> 
+		</a>
+		<div class="content">
+			<div class="inner">
+				<header class="major">
+				<!-- Add Title here -->
+					<h3>A Semi-Tidy Tuesday: Dataframe to simple maps</h3>
+				</header>
+				<!-- Add more details here -->
+				<p>Hello RiveRside community ;-)</p>
+				<p>JCome join us for a virtual meeting of networking and learning next Tuesday, April 13th, 12:00 PM (PST). Don't forget to RSVP in our Meetup to get access to the meeting's ID and password.</p>
+				<p>Whether you are new to R or a data scientist, join us for an introduction to Maps in R. We will introduce a variety of packages to use coordinates from a dataframe and create maps without GIS software.</p>
+				<p>At the end of the meeting, we will have time to help each other with any R-related questions.
+				Don't forget to RSVP in our <a href="https://www.meetup.com/rladies-riverside/events/277326999/">Meetup</a> to get access to the meeting's ID and password.</p>
+						<p>Big thanks to UCR Library and UCR GradQuant for supporting us, and to our guest speaker *Tessa Shates* from the Department of Entomology at UCR!</p>
+				<p>See you soon!</p>
+				<ul class="actions">
+					<li><a href="https://www.meetup.com/rladies-riverside/events/277326999/" class="button">Register here</a></li>
+				</ul>
+			</div>
+		</div>
+	</section>
+</section>
+
+<!-- Past Events -->
+<section id="one">
+	<div class="inner">
+		<header class="major">
+			<h2>Past Events</h2>
+		</header>
+		<p></p>
+	</div>
+</section> 
+
+<!-- Two -->
+<section id="two" class="spotlights">
+
+<!-- Past events -->
+<!-- add here -->
+
+<!-- Dec 2020 -->
+<section id="two" class="spotlights">
+	<section>
 		<a href="2020/10/27/2020dec.html" class="image"> 
 			<img src="assets/images/flyers/dec2020.png" alt="" data-position="25% 25%" /> 
 		</a>
@@ -56,12 +100,6 @@ nav-menu: true
 		<p></p>
 	</div>
 </section> 
-
-<!-- Two -->
-<section id="two" class="spotlights">
-
-<!-- Past events -->
-<!-- add here -->
 
 <!-- Jul 2020 -->
 	<section>
