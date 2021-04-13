@@ -41,6 +41,7 @@ nav-menu: true
 				<p>See you soon!</p>
 				<ul class="actions">
 					<li><a href="https://www.meetup.com/rladies-riverside/events/277326999/" class="button">Register here</a></li>
+					<li><a href="https://github.com/rladies/riverside/blob/master/Presentations/2021_04_13/README.md" class="button">Slides and code here</a></li>
 				</ul>
 			</div>
 		</div>
