@@ -1,0 +1,261 @@
+---
+title: "Semi-Tidy Maps"
+author: "Tessa Shates"
+date: "3/21/2021"
+output:
+  html_document: default
+  pdf_document: default
+---
+
+#### Code so we can more easily run the show/pre-troubleshoot problems 
+Created primarily by TS so far with contributions from TB, and refined/edited by DC & MG.  
+
+### First, we must go through the libraries to download into R 
+```{r, message = FALSE}
+library(tidyverse)
+library(lubridate) ## allows for parsing the character dates into a date format, and has functions to pull out parts of the date e.g. year
+
+library(sf)
+library(leaflet)
+library(mapview)
+library(huxtable)
+library(gdtools)
+library(systemfonts)
+library(flextable)
+
+library(ggplot2)
+#devtools::install_github("dkahle/ggmap") #latest version of GGMAP
+library(ggmap) #THIS IS OPTIONAL IF YOU WANT TO DO THE GOOGLE API KEY
+library(ggsn)
+library(dplyr)
+library(tibble)
+library(ggpubr)
+library(vegan)
+
+### FOR FUN COLORS :) 
+library("devtools")
+#devtools::install_github("katiejolly/nationalparkcolors") 
+#if you want this you need devtools installed
+#devtools::install_github("johannesbjork/LaCroixColoR")
+library(LaCroixColoR)
+library("nationalparkcolors") 
+
+library(rnaturalearth)
+library(rnaturalearthdata)
+library(ggplot2)
+library(rgeos)
+```
+
+
+Read in the CSV, reduce and evaluate the dataset.  
+
+```{r, message = FALSE, results= FALSE}
+## Read in the data set
+ufo_sightings <- readr::read_csv("https://raw.githubusercontent.com/rfordatascience/tidytuesday/master/data/2019/2019-06-25/ufo_sightings.csv") 
+
+## Learn about the data
+head(ufo_sightings)
+
+## Subset data to only one country
+#let's subset to just USA (or just any country you want)
+ufo2<- subset(ufo_sightings, country == "us")
+
+## Omit NAs 
+ufo3<- na.omit(ufo2)
+
+## Remove "unknown" UFO shapes 
+ufo4<- ufo3[ufo3$ufo_shape != "unknown",] 
+
+## How large is our data set? 
+dim(ufo4)
+ncol(ufo4) #number of columns
+nrow(ufo4) #number of rows 
+```
+
+#### Teresa's Data Wrangling with the dates  
+The date format on the file is pretty clunky. 
+
+```{r, message = FALSE, results= FALSE}
+## Let's deal with the dates
+head(ufo4$date_time) ## looks like we have Month day year hour minute format. (mdy_HM)
+ufo5 <- ufo4 %>% ## read this like take dataset ufo4 THEN, do the next line to it
+  mutate(
+    date_time = parse_date_time(date_time, 'mdy_HM'), ## convert the string to a date for lubridate
+    year = year(date_time),
+    month = month(date_time) ##...we can pull out more info from this if you want, but you get the gist here. 
+  ) ## mutate adds columns to your dataframe without changing any of the existing ones dimensions etc.
+
+## Compare ufo4 & ufo5 datasets
+head(ufo4)
+head(ufo5) # has new columns year & month
+```
+### Define variables & do some base R plots   
+In this section, I will also shrink to certain types of UFO shapes & focus on CA data points only 
+
+```{r, message = FALSE, results= FALSE}
+##BASE R SIMPLE MAP##
+gx = ufo5$longitude
+gy = ufo5$latitude
+
+## Start with a basic plot. 
+plot(gx, gy, xlab = "Latitude", ylab = "Longitude", main="USA UFO Sightings")
+
+## This is quite a lot of points! Even without a background map, we can still see a vague USA outline. If you want to continue with this, best to further subset based on category of your interest. 
+
+## Reducing to only one state in the dataset 
+ufoCA<-ufo5[ufo5$state == "ca",] 
+
+## Now let's get picky about which UFO shapes we will include
+ufoCA$ufo_shape #to print out the different shape options
+
+## I am reducing to fireballs, formations, flashes, flares and disks. 
+ufo6<-ufoCA[ufoCA$ufo_shape %in% c("fireball","formation","flash","flare","disk"),]
+
+## Base plot again to see how this differs
+rx = ufo6$longitude
+ry = ufo6$latitude
+
+## Start with a basic plot. 
+plot(rx, ry, xlab = "Latitude", ylab = "Longitude", main="CA UFO Sightings")
+
+```
+
+
+### GGPLOT TIME  
+TBH I do not know what the alpha=0.4 is that TB added :) 
+
+Simple ggplot, followed by TB summarize bubble plot by n_sightings. 
+
+```{r, message = FALSE, results= FALSE}
+## Simplest GGPLOT FOR CALIFORNIA
+ufo6 %>% 
+  ggplot()+
+  geom_point(mapping = (aes(x = longitude, y = latitude)), alpha=0.4)+
+  ggtitle("CA UFO Sightings")+
+  theme_classic() 
+
+
+## Fancier TB Bubble plots
+## Let's summarize by sightings in any given city
+cities_ufo <- ufo6 %>% 
+  group_by(city_area) %>% 
+  summarize(
+    latitude=mean(latitude), ## because summarize is going to shrink our rows we want to keep this data in it. We could use it as a grouping variable, but likely there are lat long differences within city areas?
+    longitude=mean(longitude),
+    n_sightings = length(description)
+  )
+
+## You can do the same thing for any state (if you didn't shrink it to just CA you could summarize all the states- dataset ufo5), just sub state in for city area in the group_by line. You can also group by multiple factors, e.g. ufo shape within state.
+
+## Beginnings of a bubble plot...
+cities_ufo %>% 
+  ggplot()+
+  geom_point(mapping = (aes(x = longitude, y = latitude, size=n_sightings)), alpha=0.4)+
+  ggtitle("CA UFO Sightings by city")+
+  theme_classic() 
+#so fancy oo love it
+```
+
+#### Now let us add the boundaries & backgrounds  
+
+Start with the natural earth package and data set, then zoom into west coast. 
+
+```{r, message = FALSE, results= FALSE}
+## Start with just plotting the world 
+# Pull out the dataset
+world <- ne_countries(scale = "medium", returnclass = "sf")
+class(world) # What is type class of data? It is a dataframe. 
+
+#plot the whole world - plots all country borders
+ggplot(data = world) +
+  geom_sf()
+
+#plot again but with titles
+#and a subtitle on the number of sovereign nations in the dataset
+ggplot(data = world) +
+  geom_sf() +
+  xlab("Longitude") + ylab("Latitude") +
+  ggtitle("World map", subtitle = paste0("(", length(unique(world$sovereignt)), " countries)"))
+
+##Previously, I looked up some boundary lat long for west coast & California
+ggplot(data = world) +
+    geom_sf(color="black", fill="lightgreen") +
+  coord_sf(xlim = c(-126.15, -111.12), ylim = c(31, 42), expand = FALSE)+
+  ggtitle("USA West Coast")+
+  theme_classic()
+
+
+##For fun, let's use one of the colors from the LaCroix Color palette
+##Previously, I looked up some boundary lat long for west coast & California
+ggplot(data = world) +
+    geom_sf(color="black", fill="#E9E4A6") +
+  coord_sf(xlim = c(-126.15, -111.12), ylim = c(31, 42), expand = FALSE)+
+  ggtitle("USA West Coast")+
+  theme_classic()
+```  
+
+
+#### Now let us bring back the UFO data in here  
+- Here I use the map made by the natural earth package and dataset, zoom into the west coast, and add geom_points from UFO sightings in California. In the first plot, I have the color of the point change for UFO shape.  
+- I also bring back TB's bubbleplot, and put in on the yellow west coast map background.  
+
+```{r, message = FALSE, results= FALSE}
+##Same as the last plot, but adding geom_point 
+#Automatically fills in different colors based on ufo_shape from the ggplot2 package. 
+ggplot(data = world) +
+    geom_sf(color="black", fill="#E9E4A6") +
+  coord_sf(xlim = c(-126.15, -111.12), ylim = c(31, 42), expand = FALSE)+
+  ggtitle("CA UFO Sightings")+
+  theme_classic()+
+geom_point(data=ufo6, mapping = (aes(x = longitude, y = latitude, col=ufo_shape)), size=1, stroke=1)
+
+#Let's bring back Teresa's bubbleplot
+  ggplot(data = world) +
+    geom_sf(color="black", fill="#E9E4A6") +
+  coord_sf(xlim = c(-126.15, -111.12), ylim = c(31, 42), expand = FALSE)+
+  geom_point(data=cities_ufo, mapping = (aes(x = longitude, y = latitude, size=n_sightings)), alpha=0.4)+
+  ggtitle("CA UFO Sightings by city")+
+  theme_classic() 
+
+
+```
+
+#### Interactive maps with leaflet  
+
+Make sure to use the smaller subset dataset, too much and R will struggle to deal with it.  
+You can click on points to see the information about the data point.  
+If you do this in the console, you can also easily export and **Save as image**. 
+Learn more about this package and its capabilities here: https://rstudio.github.io/leaflet/ 
+
+```{r, message = FALSE, results= FALSE}
+mapview(ufo6, xcol = "longitude", ycol = "latitude", crs = 4269, grid = FALSE)
+```
+
+#### Maps with ggplot2 and ggmap (Google Earth)  
+
+In order to do this yourself, you need to obtain a Google API Key.  
+The first 1000 requests are free, and after it is quite cheap. No more than $3/month for most uses.  
+1. [API key pricing](https://cloud.google.com/maps-platform/pricing)  
+2. [CRAN-R instructions for API key & ggmpap usage](https://cran.r-project.org/web/packages/ggmap/readme/README.html)  
+
+
+```{r, message = FALSE, results= FALSE, eval=FALSE}
+#Map can be satellite, terrain, streetview, etc. 
+#You can use a center point like below, or pick a city as a center
+#If you aren't sure what lat, lon to use, you can create the map with 
+#mapview ! 
+#Least zoomed in is 1, most is 21 (building level) 
+map1 <- get_googlemap(center = "Sacramento", zoom = 6, maptype = "terrain")
+ggmap(map1) #to view the map with a center in Sacramento 
+#or
+map2 <- get_googlemap(center = c(lon = -120.60791, lat = 37.91603), zoom = 6, maptype = "satellite")
+ggmap(map2)
+
+## Here we use map2 to be a backdrop for our ufo sightings in california. 
+ggmap(map2)+
+  ggtitle("UFO Sightings in California") + 
+  theme_void() + #this theme removes the latitude longitude lines and ticks marks. There are other themes on the ggplot cheatsheet that keep them. 
+  geom_point(data = ufo6, mapping = (aes(x = longitude, y = latitude, col=ufo_shape)), size=1, stroke=1)
+```
+
+
