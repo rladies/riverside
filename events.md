@@ -92,16 +92,6 @@ nav-menu: true
 	</section>
 </section>
 
-<!-- Past Events -->
-<section id="one">
-	<div class="inner">
-		<header class="major">
-			<h2>Past Events</h2>
-		</header>
-		<p></p>
-	</div>
-</section> 
-
 <!-- Jul 2020 -->
 	<section>
 		<a href="2020/05/22/2020jun.html" class="image">
