@@ -4,4 +4,4 @@
 
 - [Video](https://youtu.be/XwtAGQxUSxA)
 
-Thank you, [Ana](https://github.com/acrgomez/RladiesShiny.git)!
+Thank you, [Ana](https://twitter.com/anacrgomez)!
