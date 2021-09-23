@@ -22,8 +22,8 @@ nav-menu: true
 <!-- Add here -->
 <section id="two" class="spotlights">
 	<section>
-		<a href="2021/04/13/2021apr.html" class="image"> 
-			<img src="assets/images/flyers/apr2021.png" alt="" data-position="25% 25%" /> 
+		<a href="2021/09/23/2021sep.html" class="image"> 
+			<img src="assets/images/flyers/sep2021.png" alt="" data-position="25% 25%" /> 
 		</a>
 		<div class="content">
 			<div class="inner">
@@ -33,15 +33,16 @@ nav-menu: true
 				</header>
 				<!-- Add more details here -->
 				<p>Hello RiveRside community ;-)</p>
-				<p>JCome join us for a virtual meeting of networking and learning next Tuesday, April 13th, 12:00 PM (PST). Don't forget to RSVP in our Meetup to get access to the meeting's ID and password.</p>
-				<p>Whether you are new to R or a data scientist, join us for an introduction to Maps in R. We will introduce a variety of packages to use coordinates from a dataframe and create maps without GIS software.</p>
-				<p>At the end of the meeting, we will have time to help each other with any R-related questions.
-				Don't forget to RSVP in our <a href="https://www.meetup.com/rladies-riverside/events/277326999/">Meetup</a> to get access to the meeting's ID and password.</p>
-						<p>Big thanks to UCR Library and UCR GradQuant for supporting us, and to our guest speaker *Tessa Shates* from the Department of Entomology at UCR!</p>
+			<p>Join us for a virtual meeting of networking and learning next Thursday, September 23th, at 10:00 AM (PST). Don't forget to RSVP in our <a href="https://www.meetup.com/rladies-riverside/events/280747902/">Meetup</a> to get access to the meeting ID and password.</p>
+			<p>We will learn how to navigate between GitHub and R-studio. These tools
+will be helpful for collaborative coding, version control, and developing reproducible workflows. Please make a GitHub account and download R-studio before the session.</p>
+			<p>At the end of the meeting, we will have time to help each other with any
+R-related questions. Please have R and RStudio already installed on your computers.</p>
+			<p>Big thanks to UCR Library and UCR GradQuant for supporting us, and to
+our guest speaker *Kaleigh Fisher* from the Department of Entomology at UCR!</p>
 				<p>See you soon!</p>
 				<ul class="actions">
-					<li><a href="https://www.meetup.com/rladies-riverside/events/277326999/" class="button">Register here</a></li>
-					<li><a href="https://github.com/rladies/riverside/blob/master/Presentations/2021_04_13/README.md" class="button">Slides and code here</a></li>
+					<li><a href="https://www.meetup.com/rladies-riverside/events/280747902/" class="button">Register here</a></li>
 				</ul>
 			</div>
 		</div>
@@ -64,8 +65,34 @@ nav-menu: true
 <!-- Past events -->
 <!-- add here -->
 
+<!-- Apr 2021 -->
+	<section>
+		<a href="2021/04/13/2021apr.html" class="image"> 
+			<img src="assets/images/flyers/apr2021.png" alt="" data-position="25% 25%" /> 
+		</a>
+		<div class="content">
+			<div class="inner">
+				<header class="major">
+				<!-- Add Title here -->
+					<h3>A Semi-Tidy Tuesday: Dataframe to simple maps</h3>
+				</header>
+				<!-- Add more details here -->
+				<p>Hello RiveRside community ;-)</p>
+				<p>Come join us for a virtual meeting of networking and learning next Tuesday, April 13th, 12:00 PM (PST). Don't forget to RSVP in our Meetup to get access to the meeting's ID and password.</p>
+				<p>Whether you are new to R or a data scientist, join us for an introduction to Maps in R. We will introduce a variety of packages to use coordinates from a dataframe and create maps without GIS software.</p>
+				<p>At the end of the meeting, we will have time to help each other with any R-related questions.
+				Don't forget to RSVP in our <a href="https://www.meetup.com/rladies-riverside/events/277326999/">Meetup</a> to get access to the meeting's ID and password.</p>
+						<p>Big thanks to UCR Library and UCR GradQuant for supporting us, and to our guest speaker *Tessa Shates* from the Department of Entomology at UCR!</p>
+				<p>See you soon!</p>
+				<ul class="actions">
+					<li><a href="https://www.meetup.com/rladies-riverside/events/277326999/" class="button">Register here</a></li>
+					<li><a href="https://github.com/rladies/riverside/blob/master/Presentations/2021_04_13/README.md" class="button">Slides and code here</a></li>
+				</ul>
+			</div>
+		</div>
+	</section>
+
 <!-- Dec 2020 -->
-<section id="two" class="spotlights">
 	<section>
 		<a href="2020/10/27/2020dec.html" class="image"> 
 			<img src="assets/images/flyers/dec2020.png" alt="" data-position="25% 25%" /> 
@@ -90,7 +117,6 @@ nav-menu: true
 			</div>
 		</div>
 	</section>
-</section>
 
 <!-- Jul 2020 -->
 	<section>
