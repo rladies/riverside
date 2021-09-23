@@ -29,7 +29,7 @@ nav-menu: true
 			<div class="inner">
 				<header class="major">
 				<!-- Add Title here -->
-					<h3>A Semi-Tidy Tuesday: Dataframe to simple maps</h3>
+					<h3>Intro to GitHub and R</h3>
 				</header>
 				<!-- Add more details here -->
 				<p>Hello RiveRside community ;-)</p>
