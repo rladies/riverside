@@ -1,16 +1,16 @@
-current directory: /home/dcassol/Videos/riverside/vendor/bundle/ruby/2.7.0/gems/eventmachine-1.2.7/ext/fastfilereader
-/usr/bin/ruby2.7 -I /usr/lib/ruby/2.7.0 -r ./siteconf20210923-1505486-1fgi1ng.rb extconf.rb
+current directory: /home/dcassol/dcassol/R_ladies_Riverside/GitHub/riverside/vendor/bundle/ruby/2.7.0/gems/eventmachine-1.2.7/ext/fastfilereader
+/usr/bin/ruby2.7 -I /usr/lib/ruby/2.7.0 -r ./siteconf20211107-993442-1sesu0v.rb extconf.rb
 creating Makefile
 
-current directory: /home/dcassol/Videos/riverside/vendor/bundle/ruby/2.7.0/gems/eventmachine-1.2.7/ext/fastfilereader
+current directory: /home/dcassol/dcassol/R_ladies_Riverside/GitHub/riverside/vendor/bundle/ruby/2.7.0/gems/eventmachine-1.2.7/ext/fastfilereader
 make "DESTDIR=" clean
 
-current directory: /home/dcassol/Videos/riverside/vendor/bundle/ruby/2.7.0/gems/eventmachine-1.2.7/ext/fastfilereader
+current directory: /home/dcassol/dcassol/R_ladies_Riverside/GitHub/riverside/vendor/bundle/ruby/2.7.0/gems/eventmachine-1.2.7/ext/fastfilereader
 make "DESTDIR="
 compiling mapper.cpp
 compiling rubymain.cpp
 linking shared-object fastfilereaderext.so
 
-current directory: /home/dcassol/Videos/riverside/vendor/bundle/ruby/2.7.0/gems/eventmachine-1.2.7/ext/fastfilereader
+current directory: /home/dcassol/dcassol/R_ladies_Riverside/GitHub/riverside/vendor/bundle/ruby/2.7.0/gems/eventmachine-1.2.7/ext/fastfilereader
 make "DESTDIR=" install
-/usr/bin/install -c -m 0755 fastfilereaderext.so ./.gem.20210923-1505486-u4tswy
+/usr/bin/install -c -m 0755 fastfilereaderext.so ./.gem.20211107-993442-1x0f6u3

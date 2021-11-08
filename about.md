@@ -34,13 +34,15 @@ We are part of Global R-Ladies group. You can access our presentations, R script
 <!-- team -->
 <h3>Meet the Riverside Team</h3>
 <dl>
-	<dt> <a href="http://www.dcassol.com/">Daniela Cassol</a></dt>
+	<dt> <a href="http://www.dcassol.com/">Daniela Cassol</a> (Co-Founder - 2019-Present)</dt>
 
-	<dt> <a href="https://mariliagaiarsa.weebly.com/">Marília P. Gaiarsa</a></dt>
+	<dt> <a href="https://mariliagaiarsa.weebly.com/">Marília P. Gaiarsa</a> (Co-Founder - 2019-2020)</dt>
 
-	<dt> <a href="https://github.com/tfbohner">Teresa Bohner</a></dt>
+	<dt> <a href="https://github.com/tfbohner">Teresa Bohner</a> (Co-Founder - 2019-2020)</dt>
 	
-	<dt> <a href="https://tshates.github.io/">Tessa Shates</a></dt>
+	<dt> <a href="https://tshates.github.io/">Tessa Shates</a> (Co-Organizer - 2020-Present)</dt>
+	
+	<dt> <a href="mailto:kfish002@ucr.edu"> Kaleigh Fisher</a> (Co-Organizer - 2021-Present)</dt>
 </dl>
 
 <hr class="major" />

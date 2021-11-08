@@ -1,11 +1,11 @@
-current directory: /home/dcassol/Videos/riverside/vendor/bundle/ruby/2.7.0/gems/sassc-2.4.0/ext
-/usr/bin/ruby2.7 -I /usr/lib/ruby/2.7.0 -r ./siteconf20210923-1505486-1dtweny.rb extconf.rb
+current directory: /home/dcassol/dcassol/R_ladies_Riverside/GitHub/riverside/vendor/bundle/ruby/2.7.0/gems/sassc-2.4.0/ext
+/usr/bin/ruby2.7 -I /usr/lib/ruby/2.7.0 -r ./siteconf20211107-993442-1iwr8cz.rb extconf.rb
 creating Makefile
 
-current directory: /home/dcassol/Videos/riverside/vendor/bundle/ruby/2.7.0/gems/sassc-2.4.0/ext
+current directory: /home/dcassol/dcassol/R_ladies_Riverside/GitHub/riverside/vendor/bundle/ruby/2.7.0/gems/sassc-2.4.0/ext
 make "DESTDIR=" clean
 
-current directory: /home/dcassol/Videos/riverside/vendor/bundle/ruby/2.7.0/gems/sassc-2.4.0/ext
+current directory: /home/dcassol/dcassol/R_ladies_Riverside/GitHub/riverside/vendor/bundle/ruby/2.7.0/gems/sassc-2.4.0/ext
 make "DESTDIR="
 compiling ./libsass/src/memory/allocator.cpp
 compiling ./libsass/src/ast.cpp
@@ -75,6 +75,6 @@ compiling ./libsass/src/util_string.cpp
 compiling ./libsass/src/values.cpp
 linking shared-object sassc/libsass.so
 
-current directory: /home/dcassol/Videos/riverside/vendor/bundle/ruby/2.7.0/gems/sassc-2.4.0/ext
+current directory: /home/dcassol/dcassol/R_ladies_Riverside/GitHub/riverside/vendor/bundle/ruby/2.7.0/gems/sassc-2.4.0/ext
 make "DESTDIR=" install
-/usr/bin/install -c -m 0755 libsass.so ./.gem.20210923-1505486-1xc9nyo/sassc
+/usr/bin/install -c -m 0755 libsass.so ./.gem.20211107-993442-7zf1eg/sassc

@@ -22,6 +22,49 @@ nav-menu: true
 <!-- Add here -->
 <section id="two" class="spotlights">
 	<section>
+		<a href="2021/11/07/2021nov.html" class="image"> 
+			<img src="assets/images/flyers/nov2021.png" alt="" data-position="25% 25%" /> 
+		</a>
+		<div class="content">
+			<div class="inner">
+				<header class="major">
+				<!-- Add Title here -->
+					<h3>How to Build Portfolio Website with GitHub Pages</h3>
+				</header>
+				<!-- Add more details here -->
+				<p>Hello RiveRside community ;-)</p>
+			<p>Join us for a virtual meeting of networking and learning next Tuesday,
+November 9th, at 12:00 PM (PST). Don't forget to RSVP in our <a href="https://www.meetup.com/rladies-riverside/events/281706567/">Meetup</a> to get access to the meeting ID and password.</p>
+			<p>We will learn how to build a portfolio website from scratch with GitHub Pages and Jekyll. This presentation will demonstrate how to create an entirely free, easy-to-maintain, friendly, and secure website.
+Please sign up for a GitHub account before the session.</p>
+			<p>At the end of the meeting, we will have time to help each other with any R-related questions.</p>
+			<p>Big thanks to UCR Library and UCR GradQuant for supporting us and our guest speaker *Daniela Cassol* from the Department of Botany and Plant Sciences at UCR!</p>
+				<p>See you soon!</p>
+				<ul class="actions">
+					<li><a href="https://www.meetup.com/rladies-riverside/events/281706567/" class="button">Register here</a></li>
+				</ul>
+			</div>
+		</div>
+	</section>
+</section>
+
+<!-- Past Events -->
+<section id="one">
+	<div class="inner">
+		<header class="major">
+			<h2>Past Events</h2>
+		</header>
+		<p></p>
+	</div>
+</section> 
+
+<!-- Two -->
+<section id="two" class="spotlights">
+
+<!-- Past events -->
+<!-- add here -->
+<!-- Sep 2021 -->
+	<section>
 		<a href="2021/09/23/2021sep.html" class="image"> 
 			<img src="assets/images/flyers/sep2021.png" alt="" data-position="25% 25%" /> 
 		</a>
@@ -47,23 +90,6 @@ our guest speaker *Kaleigh Fisher* from the Department of Entomology at UCR!</p>
 			</div>
 		</div>
 	</section>
-</section>
-
-<!-- Past Events -->
-<section id="one">
-	<div class="inner">
-		<header class="major">
-			<h2>Past Events</h2>
-		</header>
-		<p></p>
-	</div>
-</section> 
-
-<!-- Two -->
-<section id="two" class="spotlights">
-
-<!-- Past events -->
-<!-- add here -->
 
 <!-- Apr 2021 -->
 	<section>
